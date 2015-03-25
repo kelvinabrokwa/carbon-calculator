@@ -1,5 +1,70 @@
-.container {
-	width: 83.33333%;
-	margin-right: auto;
-	margin-left: auto;
+/*
+ * color from: http://flatuicolors.com/
+ */ 
+
+body {
+	margin: 0;
+	border: 0;
+	font-family: Helvetica;
+	font-size: 1.5em;
+}
+
+a {
+	text-decoration: none !important;
+	color: #000;
+}
+
+#title {
+	position: fixed;
+	width: 100%;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	text-align: center;
+	background-color: #000;
+	color: #fff;
+}
+
+#pane {
+	position: fixed;
+	overflow: scroll;
+	//float: left;
+	top: 73.636px;
+	right: 80%;
+	height: 92%;
+	width: 20%;
+	background-color: #1abc9c;
+}
+
+.opt-out {
+	width: 100%;	
+	display: table;
+	height: 12%;
+	overflow: hidden;
+}
+.option {
+	width: 100%;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.option:hover,
+.option.selected {
+	background-color: #f1c40f !important;
+}
+
+#main {
+	position: fixed;
+	overflow: scroll;
+	top: 73.636px;
+	left: 20%;
+	right: 0px;
+	//float: right;
+	width: 76%;
+	height: 100%;
+}
+
+.categ {
+	padding: 5%;
+	height: 500px;
 }

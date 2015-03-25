@@ -5,44 +5,62 @@
 	<link rel='stylesheet' href='css/style.css'>
 </head>
 <body>
-	<div class='container'>
-		<div class='tabs'>
-			<ul class='tab-links'>
-				<li class='active'><a href='#basic'></a>Basic</li>
-				<li><a href='#energy'>Energy</a></li>
-				<li><a href='#water'>Water</a></li>
-				<li><a href='#waste'>Waste</a></li>
-				<li><a href='#food'>Food</a></li>
-				<li><a href='#transportation'>Transportation</a></li>
-				<li><a href='#partying'>Partying</a></li>
-			</ul>
+	<div id='content'>
+		<div id='title'>
+			W&M Carbon Calculator
 		</div>
-		<div id='user_in'>
-			<div id='tab-content'>
-				<div id='basic' class='tab active'>
-					<p>basic tab</p>
+		<div id='pane'>
+			<a href='#housing'>
+				<div class='opt-out'>
+					<div class='option' id='housing_opt'>Housing</div>
 				</div>
-				<div id='energy' class='tab'>
-					<p>energy tab</p>
+				
+			</a>
+			<a href='#trans'>
+				<div class='opt-out'>
+					<div class='option' id='trans_opt'>Transportation</div>
 				</div>
-				<div id='water' class='tab'>
-					<p>water tab</p>
+				
+			</a>
+			<a href='#life'>
+				<div class='opt-out'>
+					<div class='option' id='life_opt'>Life</div>
 				</div>
-				<div id='waste' class='tab'>
-					<p>waste tab</p>
+			</a>
+			<a href='#calc'>
+				<div class='opt-out'>
+					<div class='option' id='calc_opt'>Calculate</div>
 				</div>
-				<div id='food' class='tab'>
-					<p>food tab</p>
-				</div>
-				<div id='transportation' class='tab'>
-					<p>transportation tab</p>
-				</div>
-				<div id='partying' class='tab'>
-					<p>partying tab woo!</p>
-				</div>
+			</a>
+		</div>
+		<div id='main'>
+			<div class='categ' id='housing'>
+				<p>For Example: Where do you live?</p>
+				<select>
+					<option value='oncampus'>On campus</option>
+					<option value='offcampus'>Off campus</option>
+				</select>
+			</div>
+			<div class='categ' id='trans'>
+				<p>How do you get around?</p>
+				<select>
+					<option value='walk'>Walk</option>
+					<option value='drive'>Drive</option>
+				</select>
+			</div>
+			<div class='categ' id='life'>
+				<p>Do you party a lot?</p>
+				<select>
+					<option value='yes'>Yes</option>
+					<option value='hellyes'>Hell Yes</option>
+				</select>
+				<p>Who do you think you are?</p>
+				<input type='text'>
+			</div>
+			<div class= 'categ' id='calc'>
+				<button type='button'>Calculate that shit</button>
 			</div>
 		</div>
-		<div id='result'></div>
 	</div>
 	<script src='index.js'></script>
 </body>
