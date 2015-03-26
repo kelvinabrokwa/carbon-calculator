@@ -1,70 +1,108 @@
 /*
- * color from: http://flatuicolors.com/
+ * colors from: http://flatuicolors.com/
+ * font from: https://www.theleagueofmoveabletype.com/raleway
  */ 
 
+@font-face{ 
+  font-family: 'Raleway';
+  src: url('raleway/webfonts/raleway_thin-webfont.eot');
+  src: url('raleway/webfonts/raleway_thin-webfont.eot?#iefix') format('embedded-opentype'),
+       url('raleway/webfonts/raleway_thin-webfont.woff') format('woff'),
+       url('raleway/webfonts/raleway_thin-webfont.ttf') format('truetype'),
+       url('raleway/webfonts/raleway_thin-webfont.svg#webfont') format('svg');
+}
+
 body {
-	margin: 0;
-	border: 0;
-	font-family: Helvetica;
-	font-size: 1.5em;
+  margin: 0;
+  border: 0;
+  font-family: Raleway;
+}
+
+h1, h2, h3, h4, h5, h6,
+strong,
+svg,
+button,
+.strong,
+.tabs a,
+input[type],
+label,
+select,
+option,
+form fieldset label,
+.button {
+  font-family: Raleway;
 }
 
 a {
-	text-decoration: none !important;
-	color: #000;
+  text-decoration: none !important;
+  color: #000;
 }
 
 #title {
-	position: fixed;
-	width: 100%;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	text-align: center;
-	background-color: #000;
-	color: #fff;
+  position: fixed;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  font-size: 60px;
+}
+
+#yellow {
+  position: fixed;
+  top: 110.909px;
+  width: 100%;
+  height: 5px;
+  background-color: #f1c40f;
 }
 
 #pane {
-	position: fixed;
-	overflow: scroll;
-	//float: left;
-	top: 73.636px;
-	right: 80%;
-	height: 92%;
-	width: 20%;
-	background-color: #1abc9c;
+  position: fixed;
+  overflow: scroll;
+  top: 115.909px;
+  right: 80%;
+  height: 92%;
+  width: 20%;
+  background-color: #1abc9c;
 }
 
 .opt-out {
-	width: 100%;	
-	display: table;
-	height: 12%;
-	overflow: hidden;
+  width: 100%;  
+  display: table;
+  height: 3em;
+  overflow: hidden;
 }
 .option {
-	width: 100%;
-	text-align: center;
-	display: table-cell;
-	vertical-align: middle;
+  width: 100%;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .option:hover,
 .option.selected {
-	background-color: #f1c40f !important;
+  background-color: #f1c40f !important;
+}
+
+#brought {
+  position: fixed;
+  width: 100%;
+  font-size: 10px;
+  text-align: center;
+  bottom: 0px;
 }
 
 #main {
-	position: fixed;
-	overflow: scroll;
-	top: 73.636px;
-	left: 20%;
-	right: 0px;
-	//float: right;
-	width: 76%;
-	height: 100%;
+  position: fixed;
+  overflow: scroll;
+  top: 115.909px;
+  left: 20%;
+  right: 0px;
+  height: 100%;
 }
 
 .categ {
-	padding: 5%;
-	height: 500px;
+  //height: 100%;
+  padding: 5%;
 }
